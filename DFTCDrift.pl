@@ -32,7 +32,7 @@ for( $frame_counter = 0; $frame_counter < $total_frames; $frame_counter++ ) {
 	
 	$t_ms = ( $hour * 60 * 60 * 1000 ) + ( $minute * 60 * 1000 ) + ( $second * 1000 ) + ( ( $frame / 30 ) * 1000 );
 	$drift = ( $frame_duration_ms * $frame_counter ) - ( $t_ms );
-	print " ($drift)";
+	print " ($t_ms) ($drift)";
 	
 	print "\n";
 		
